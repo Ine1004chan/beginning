@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+var n = 0;
+do {
+  n++;
+    alert("Нажмите на курок");
+    if ((Math.random() *6) < 1) {
+      alert("Покойтесь с миром");
+      break;
+    } else {
+      alert("Вам повезло!");
+    }
+} while (prompt("Если желаете продолжить игру введите 666") == "666");
+  
+alert("Вы держитесь здесь, хорошего вам настроения!");
+alert("Раундов сыграно: " + n);
+window.location="index.html";
+</script>

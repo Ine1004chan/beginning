@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		var result = 0;
+		function AskQuestion(textBoxId, answer)
+		{
+			var userAnswer = document.getElementById(textBoxId).value;
+			if(userAnswer == answer)
+				result++
+		}
+		function AskQuestions()
+		{
+			AskQuestion("useranswer1", "язык");
+			AskQuestion("useranswer2", "ковш");
+			AskQuestion("useranswer3", "кораллы");
+			AskQuestion("useranswer4", "5");
+			
+			if(result == 4)
+				alert("Поздравляем, Вы угадали все загадки!");
+			else if (result == 1) 
+				alert("Вы угадали только 1 загадку");
+				else if(result == 2)
+				alert("Вы угадали 2 загадки");
+					else if(result == 3)
+					alert("Вы угадали 3 загадки");
+					else	
+						alert("Вы не угадали ни одной загадки");
+			
+					
+		}
+	</script>>
+</head>
+<body style="font-family: 'Lobster', cursive; background-color: #FEFFE4; font-size: 1.3em">
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="riddle_page.html">Загадки</a><span>/</span>
+		<a href="guess.html">Робин Гуд</a><span>/</span>
+		<a href="roulette.html">Русская рулетка</a><span>/</span>
+		
+	</div>
+<div id="content">	
+	<h1 style="color: #4F1C4C";> Личный сайт студента GeekBrains</h1>
+	<div id="center">
+	<h2 style="color: #A91D1D";>Игра в загадки</h2>
+	<div id="textBoxId">
+		<h5>Отгадай загадки:</h5>
+		<p>Если б не было его - не сказал бы ничего</p>
+		<input type= "text" id="useranswer1">
+
+		<p>Утка в море хвост на заборе</p>
+		<input type= "text" id="useranswer2">
+
+		<p>Что украли у Клары?</p>
+		<input type= "text" id="useranswer3">
+
+		<p>Угадайте целое число между 4 и 6</p>
+		<input type= "text"id="useranswer4">
+		<br></br>
+		<a href="#" onclick="AskQuestions();">Отправить></a>
+		 
+	</div>
+</div>
+	<hr/>
+	<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains</a>
+	</div>
+</body>
+</html>
