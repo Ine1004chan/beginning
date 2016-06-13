@@ -1,0 +1,20 @@
+#header{
+	height: 50px;
+	background-color: #E7E3C5;
+	border: 0px;
+	min-width: 640px;
+	text-align: center;
+	padding-top: 18px;
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+
+#footer {
+	background-color: #54777D;
+	min-width: 640px;
+	text-align: center;
+	padding-top: 48px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	height: 120px;
+}

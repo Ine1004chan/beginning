@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function shooter() 
+		{
+			var a = 78;
+			var b = 12;	
+			alert("Добро пожаловать в игру 'Робин Гуд!'");
+			var player1 = prompt("Введите имя первого игрока: ");
+			var player2 = prompt("Введите имя второго игрока: ");
+			while (1) {
+				var c = prompt(player1  + "Введите, пожалуйста, угол выстрела от 1 до 90");
+				if ( isNaN(c)) {
+					alert('Ай-яй-яй! Вводить надо числа!');
+					}	
+				if (((c>72) && (c<82)) || ((c>8) && (c<16))) {
+					alert("В десятку! Вы - настоящий Робин Гуд!");
+				break;	
+					} 
+					else {
+					alert("Промах! Ход переходит к игроку: " +  player2);
+					}
+					var d = prompt(player2 + "Введите, пожалуйста, угол выстрела от 1 до 90");
+					if (((c>72) && (c<82)) || ((c>8) && (c<16))) {
+					alert("В десятку! Вы - настоящий Робин Гуд!");
+					break;	
+					} 
+						else {
+					alert("Промах! Ход переходит к игроку: " +  player1);
+					}
+			}
+		}
+	</script>
+</head>
+<body style="font-family: 'Lobster', cursive; background-color: #FEFFE4; font-size: 1.3em">
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="riddle_page.html">Загадки</a><span>/</span>
+		<a href="guess.html">Робин Гуд</a><span>/</span>
+		<a href="roulette.html">Русская рулетка</a><span>/</span>
+		
+	</div>
+<div id="content">	
+	<h1 style="color: #4F1C4C";>Личный сайт студента" GeekBrains</h1>
+	<div id="center">
+	<h2 style="color: #A91D1D";>Робин Гуд</h2>
+	<div id="textBoxId">
+		<p>Игра для двоих. Нужно попасть в цель!</p>
+		<a href="#" onclick="shooter();">Начать игру></a>					
+	</div>
+</div>
+	<hr/>
+	<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains</a>
+	</div>
+</body>
+</html>		
+	
+	
+
+
+
+
+
+
+
+</script>
