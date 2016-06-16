@@ -1,18 +1,53 @@
-<meta charset="utf-8">
-<script>
-var n = 0;
-do {
-  n++;
-    alert("Нажмите на курок");
-    if ((Math.random() *6) < 1) {
-      alert("Покойтесь с миром");
-      break;
-    } else {
-      alert("Вам повезло!");
-    }
-} while (prompt("Если желаете продолжить игру введите 666") == "666");
-  
-alert("Вы держитесь здесь, хорошего вам настроения!");
-alert("Раундов сыграно: " + n);
-window.location="index.html";
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">	
+		function shoot() 
+		{		
+			var n = 0;
+			do {
+				n++;
+				alert("Нажмите на курок");
+			if ((Math.random() *6) < 1) {
+				alert("Покойтесь с миром");
+			break;
+			} else {
+				alert("Вам повезло!");
+			}
+			} while (prompt("Если желаете продолжить игру введите 666") == "666");
+					  
+				alert("Вы держитесь здесь, хорошего вам настроения!");
+				alert("Раундов сыграно: " + n);
+			window.location="index.html";
+		}	
+	</script>
+</head>
+<body style="font-family: 'Lobster', cursive; background-color: #FEFFE4; font-size: 1.3em">
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="riddle_page.html">Загадки</a><span>/</span>
+		<a href="guess.html">Робин Гуд</a><span>/</span>
+		<a href="roulette.html">Русская рулетка</a><span>/</span>
+
+	</div>
+<div id="content">	
+	<h1 style="color: #4F1C4C";>Личный сайт студента" GeekBrains</h1>
+	<div id="center">
+	<h2 style="color: #A91D1D";>Робин Гуд</h2>
+	<div id="textBoxId">
+		<p>Игра в русскую рулетку.</p>
+		<a href="#" onclick="shoot();">Испытать удачу!></a>					
+	</div>
+</div>
+	<hr/>
+	<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains</a>
+	</div>
+</body>
+</html>		
+
+</script>	
